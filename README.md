@@ -1,54 +1,55 @@
-# React + TypeScript + Vite 
+# 🚗 Calculadora de Combustível
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## ✨ Sobre o Projeto
 
-Currently, two official plugins are available:
+Este é um mini-projeto desenvolvido com React + TypeScript utilizando Vite, que tem como objetivo ajudar os usuários a identificar qual combustível compensa mais abastecer: álcool ou gasolina.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 👨‍💻 Tecnologias Utilizadas
 
-## Expanding the ESLint configuration
+React
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+TypeScript
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Vite
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ⚡ Como Funciona?
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+O cálculo é baseado na seguinte fórmula:
+
+Se o preço do álcool for igual ou inferior a 70% do preço da gasolina, então abastecer com álcool é mais vantajoso. Caso contrário, a gasolina é a melhor opção.
+
+## 🔍 Fórmula:
+
+```(preço do álcool / preço da gasolina) * 100```
+
+Se o resultado for menor ou igual a 70, o álcool é mais vantajoso.
+Se for maior que 70, a gasolina é a melhor escolha.
+
+## 🛠️ Como Executar o Projeto
+
+1. Clonar o repositório
+
+git clone https://github.com/lucaslobatob/calc-combustivel.git
+
+2. Acessar o diretório do projeto
+
+```cd calc-combustivel```
+
+3. Instalar as dependências
+
+```npm install```
+ou
+```yarn install```
+
+4. Rodar o projeto localmente
+
+```npm run dev```
+ou
+```yarn dev```
+
+Agora, o projeto estará rodando em http://localhost:5173/ (caso esteja usando o Vite padrão).
+
+## 🌟 Contribuição
+
+Sinta-se à vontade para abrir uma issue ou um pull request se quiser sugerir melhorias ou corrigir bugs!
