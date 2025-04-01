@@ -53,3 +53,9 @@ Agora, o projeto estará rodando em http://localhost:5173/ (caso esteja usando o
 ## 🌟 Contribuição
 
 Sinta-se à vontade para abrir uma issue ou um pull request se quiser sugerir melhorias ou corrigir bugs!
+
+
+
+
+https://github.com/user-attachments/assets/bd30f6a0-5284-43d5-a3cb-bb3ccd0f9eab
+
